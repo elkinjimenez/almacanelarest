@@ -9,7 +9,6 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 import com.api.almacanela.entities.Usuarios;
 import java.util.Optional;
-import org.springframework.data.domain.Page;
 import org.springframework.transaction.annotation.Transactional;
 
 /**
@@ -21,8 +20,5 @@ public interface UsuariosDAO extends CrudRepository<Usuarios, Integer> {
 
     @Transactional(readOnly = true)
     Optional<Usuarios> findByUsuario(String usuario);
-    
-    @Override
-    Page<Usuarios> findAll();
     
 }

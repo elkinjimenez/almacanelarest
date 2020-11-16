@@ -19,7 +19,7 @@ import org.springframework.stereotype.Service;
 @Service
 public interface IUsuariosService {
     
-    Page<UsuariosDTO> findAll();
+    List<UsuariosDTO> findAll();
     
     UsuariosDTO findByUsuario(String usuario);
     

@@ -5,6 +5,9 @@
  */
 package com.api.almacanela.controllers;
 
+import com.api.almacanela.services.interfaces.IUsuariosService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,12 +20,15 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @CrossOrigin("*")
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/usuarios")
 public class ApiController {
 
-    @GetMapping("/example")
+    @Autowired
+    private IUsuariosService usuarioService;
+
+    @GetMapping(value = "/findAll", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Object> index() {
-        return ResponseEntity.ok("OK");
+        return ResponseEntity.ok(this.usuarioService.findAll());
     }
 
 }
