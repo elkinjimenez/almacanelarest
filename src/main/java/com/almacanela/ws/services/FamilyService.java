@@ -2,8 +2,8 @@ package com.almacanela.ws.services;
 
 import java.util.ArrayList;
 
-import com.almacanela.ws.models.FamilyModel;
-import com.almacanela.ws.repositories.FamilyRepositories;
+import com.almacanela.ws.models.Family;
+import com.almacanela.ws.repositories.FamilyRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -11,9 +11,9 @@ import org.springframework.stereotype.Service;
 @Service
 public class FamilyService {
     @Autowired
-    FamilyRepositories familyRep;
+    FamilyRepository familyRep;
 
-    public ArrayList<FamilyModel> getFamily() {
-        return (ArrayList<FamilyModel>) familyRep.findAll();
+    public ArrayList<Family> getFamily() {
+        return (ArrayList<Family>) familyRep.findAll();
     }
 }

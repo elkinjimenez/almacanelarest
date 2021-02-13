@@ -2,7 +2,7 @@ package com.almacanela.ws.controllers;
 
 import java.util.ArrayList;
 
-import com.almacanela.ws.models.FamilyModel;
+import com.almacanela.ws.models.Family;
 import com.almacanela.ws.services.FamilyService;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +15,7 @@ public class FamilyController {
     FamilyService familySer;
 
     @RequestMapping(value = "/queryFamilies", method = RequestMethod.GET)
-    public ArrayList<FamilyModel> obtenerFamilias() {
+    public ArrayList<Family> obtenerFamilias() {
         return familySer.getFamily();
     }
 }
