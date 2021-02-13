@@ -1,10 +1,10 @@
-package com.almacanela.ws;
+package com.almacanela.api;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class WsAlmacanelaApplicationTests {
+class ApiAlmacanelaApplicationTests {
 
 	@Test
 	void contextLoads() {

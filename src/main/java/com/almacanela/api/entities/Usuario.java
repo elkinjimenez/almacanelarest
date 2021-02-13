@@ -1,13 +1,14 @@
-package com.almacanela.ws.models;
+package com.almacanela.api.entities;
 
 import javax.persistence.*;
 
-import lombok.Getter;
-import lombok.Setter;
+import com.almacanela.api.models.RespuestaServicio;
+
+import lombok.*;
 
 @Entity
 @Table(name = "usuario")
-public class User {
+public class Usuario extends RespuestaServicio {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
