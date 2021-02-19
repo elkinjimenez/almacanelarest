@@ -35,5 +35,9 @@ public class Usuario extends RespuestaServicio {
     @Getter
     @Setter
     private String descripcion;
-
+    @JoinColumn(name = "id_persona", referencedColumnName = "id_persona")
+    @ManyToOne(optional = false)
+    @Getter
+    @Setter
+    private Persona idPersona;
 }

@@ -9,7 +9,7 @@
 	</parent>
 	<groupId>com.almacanela</groupId>
 	<artifactId>api-almacanela</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>ws</version>
 	<packaging>war</packaging>
 	<name>api-almacanela</name>
 	<description>Api Rest - Almacanela</description>

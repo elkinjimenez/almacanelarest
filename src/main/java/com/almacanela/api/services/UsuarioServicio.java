@@ -17,6 +17,7 @@ public class UsuarioServicio {
         if (usuarioLogueado != null) {
             usuarioLogueado.setClave(null);
             usuarioLogueado.setEstadoRespuesta(true);
+            usuarioLogueado.getIdPersona().setImagen(null);
         } else {
             Usuario vacio = new Usuario();
             vacio.setEstadoRespuesta(false);
