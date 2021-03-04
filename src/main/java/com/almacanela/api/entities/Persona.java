@@ -14,11 +14,11 @@ public class Persona {
     @Setter
     @Column(name = "id_persona", nullable = false, unique = true)
     private Integer idPersona;
-    @Lob
-    @Getter
-    @Setter
-    @Column(name = "imagen")
-    private byte[] imagen;
+    // @Lob
+    // @Getter
+    // @Setter
+    // @Column(name = "imagen")
+    // private byte[] imagen;
     @Getter
     @Setter
     @Column(name = "identificacion", unique = true, nullable = false)
